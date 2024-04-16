@@ -11,8 +11,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
-server:
-  port: 8181
+        
 limit-service:
   minimum: 55
   maximum: 999999
