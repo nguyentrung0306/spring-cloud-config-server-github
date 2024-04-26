@@ -12,10 +12,6 @@ spring:
 #      hibernate:
 #        format_sql: true
 #
-#limit-service:
-#  minimum: 55
-#  maximum: 999999
-
 # Cấu hình cấp độ logging
 logging:
   level:
@@ -28,9 +24,8 @@ management:
         include: '*'
   endpoint:
     threaddump:
-      enabled: true
+      enabled: 'true'
     health:
-      enabled: true
+      enabled: 'true'
     info:
-      enabled: true
-    :
+      enabled: 'true'
