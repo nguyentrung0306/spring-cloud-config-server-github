@@ -27,7 +27,10 @@ management:
       exposure:
         include: '*'
   endpoint:
+    threaddump:
+      enabled: true
     health:
-      enabled: false
+      enabled: true
     info:
-      enabled: false
+      enabled: true
+    :
