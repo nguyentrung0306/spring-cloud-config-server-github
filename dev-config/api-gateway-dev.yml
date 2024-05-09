@@ -1,18 +1,26 @@
 spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: 'true'
+          lower-case-service-id: 'true'
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://localhost:3306/db_gateway?createDatabaseIfNotExist=true&amp;amp;useUnicode=true&amp;amp;characterEncoding=utf-8&amp;amp;autoReconnect=true
     username: root
-    password: 111111
+    url: jdbc:mariadb://localhost:3306/db_gateway?createDatabaseIfNotExist=true&amp;amp;useUnicode=true&amp;amp;characterEncoding=utf-8&amp;amp;autoReconnect=true
+    password: '111111'
+  main:
+    web-application-type: reactive
   jpa:
+    properties:
+      hibernate:
+        format_sql: 'true'
     hibernate:
       ddl-auto: update
-#    show-sql: true
-#    properties:
-#      hibernate:
-#        format_sql: true
-#
-# Cấu hình cấp độ logging
+    show-sql: 'true'
+server:
+  port: '8080'
 logging:
   level:
     root: INFO
