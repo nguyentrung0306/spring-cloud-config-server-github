@@ -13,6 +13,6 @@ spring:
         format_sql: true
 
 # Cấu hình cấp độ logging
-logging:
-  level:
-    root: INFO
+#logging:
+#  level:
+#    root: INFO
